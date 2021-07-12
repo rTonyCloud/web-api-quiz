@@ -5,7 +5,7 @@
 # Hello this is a fun short quiz built with javascript and DOM elements 
 
 # Programming language use:
-* Javascript
+* Javascript <br />
 ##Jquery/DOM
 ##HTML/CSS
 
