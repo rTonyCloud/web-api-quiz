@@ -64,14 +64,8 @@ function countdown() {
     }, 1000);
   };
 
-function quizGame() {
-
      var questions = [
-    { q: 'The sky is blue.', a: 't' },
-    { q: 'There are 365 days in a year.', a: 't' },
-    { q: 'There are 42 ounces in a pound.', a: 'f' },
-    { q: 'The Declaration of Independence was created in 1745.', a: 'f' },
-    { q: 'Bananas are vegetables.', a: 'f' }
+    { q: 'Javascript sucks?.', c:['you suck', 'you suck 2', 'you suck 3'] a: '1' }
   ];
     
     // We start the game with a score of 0.
@@ -84,15 +78,17 @@ function quizGame() {
     
         // Compare answers
         if (
-        (answer === true && questions[i].a === 't') ||
-        (answer === false && questions[i].a === 'f')
+        (answer === true && questions[i].a === '0') ||
+        (answer === false && questions[i].a === '0')
         ) {
         // Increase score
         score++;
-        // Alert the user
-        alert('Correct!');
         } else {
-        alert('Wrong!');
+        score--;
+        // Alert the user
+        // alert('Correct!');
+        // } else {
+        // alert('Wrong!');
 
-        buttonEl.onclick = countdown;
-        }}};
+        buttonEl.onclick = quizEl;
+        }};
