@@ -64,8 +64,8 @@ function countdown() {
     }, 1000);
   };
 
-     var questions = [
-    { q: 'Javascript sucks?.', c:['you suck', 'you suck 2', 'you suck 3'] a: '1' }
+    var questions = [
+    { q: 'Javascript sucks?.', c:['you suck', 'you suck 2', 'you suck 3'], a: '1' }
   ];
     
     // We start the game with a score of 0.
@@ -89,6 +89,9 @@ function countdown() {
         // alert('Correct!');
         // } else {
         // alert('Wrong!');
-
-        buttonEl.onclick = quizEl;
+            
+        buttonEl.addEventListener("click", function(){
+            countdown()
+            quizEl()
+        });
         }};
