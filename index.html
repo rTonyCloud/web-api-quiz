@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -8,12 +9,23 @@
     <title>Web API Quiz</title>
 </head>
 <header>
-    <div id="hi-score"></div>
+    <h2 id="timer">Timer: <span id="countdown">60</span></h2>
 </header>
-<body id="quiz">
-    <div id="button">
-        <h2 id="countDown"></h2>
+<body class="container">
+    <main>
+    <div class>
+        <h1>Coding Quiz Challenge</h1>
+        <p>Try to answer the following code-related questions within the time limit. Keep in mind that incorrect answers will penalize your score/time by 10 seconds.</p>
+        <a href="" class="btn hide" id="startQiz">Play</a>
+        <a href="/hiScore.html" class="btn hide" id="highscore">High Scores</a>
     </div>
-</body>
+
+        <div class="questions hide">
+            <h2 id="title hide"></h2>
+        <div id="choices"></div>
+         </div>
+    </main>
+    <script src="./assets/js/questions.js"></script>
     <script src="./assets/js/script.js"></script>
+</body>
 </html>
