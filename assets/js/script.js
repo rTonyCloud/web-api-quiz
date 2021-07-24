@@ -1,41 +1,5 @@
-// heading code
-var bodyEl = document.body;
-var h2El = document.createElement('h2');
-h2El.textContent = 'Coding Quiz Challenge';
-
-h2El.setAttribute('style', 'margin:auto; width:50%; text-align:center;');
-bodyEl.appendChild(h2El);
-
-
-// code for paragrpah 
-var bodyEl = document.body;
-var pEl = document.createElement("p");
-pEl.textContent = 'Try to answer the following code-related questions within the time limit. Keep in mind that incorrect answers will penalize your score/time by 10 seconds.';
-
-pEl.setAttribute('style', 'margin:auto; width:50%; text-align:center;');
-bodyEl.appendChild(pEl);
-
-
-// button for documentation
-var buttonEl = document.createElement("button");
-buttonEl.innerHTML = "Start Quiz";
-buttonEl.id = "buttonq"
-
-// 2. body append
-var bodyEl = document.getElementsByTagName("body")[0];
-bodyEl.appendChild(buttonEl);
-
-// 3. style 
-buttonEl.setAttribute('style', 'width:50%; margin-left:25%; margin-right:25%;');
-
-// 4. Add event handler
-buttonEl.addEventListener ("click", function() {
-  ;
-});
-// end of page layout
-
-var timerEl = document.getElementById('button');
-var mainEl = document.getElementById('body');
+var timer = document.getElementById('button');
+var main document.getElementById('body');
 var buttonEl = document.getElementById('buttonq');
 var quizEl = document.getElementById('buttonq');
 
