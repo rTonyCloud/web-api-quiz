@@ -6,21 +6,55 @@
     font-family: 'Courier New', Courier, monospace;
 }
 
+
+/* entire html */
 html {
     text-align: center;
 }
 
-p {
+/* text color and weight */
+p, h1 {
     font-weight: 900;
+    font-size: 2rem;
 }
 
+#start button {
+
+}
+
+#back button {
+
+}
+
+#clearscore {
+
+}
+
+#questionsbtn {
+
+}
+
+/* timer */
+span {
+    color:red;
+}
+
+/* button  */
 .btn {
-    display:flex;
+    display:flex; 
     justify-content:space-evenly;
     text-transform: uppercase;
+    padding: 1rem;
     font-size: 50px;
     background-color: red;
-    border-radius: 50px ;
-    margin-top: 50px;
+    border-radius: 25px ;
+    margin-top: 30px;
     text-decoration: none;
 }
+
+.btn:hover {
+    cursor: pointer;
+    border: 2px inset;
+    color: hsl(0, 0%, 0%)
+}
+

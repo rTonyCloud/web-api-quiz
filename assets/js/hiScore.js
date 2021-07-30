@@ -1,18 +1,30 @@
-var highScore = 
+var gameScoreArr = [];
+var gameScoreObj = {};
 
-    // localstorage
-        // save the data on local storage
+
+
+var highScore =  localStorage.getItem('highScore')
+    
+
+            // save the data on local storage
             localStorage.setItem()
-            // getelementbyid("#") 
-
-        // fetch the hiscore
-            localStorage.getItem()
 
         // clear hiscore
         localStorage.removeItem()
         
+        // display the score of the timer left 
+
+        displayScore();
+
+        // displayallhighscore'
+        // displayer user score 
 
         // append
+        
         hiscore.appendchild()
+
+
+        // add elementbyid button for back
+        // add elementbyid button for clear
 
         
