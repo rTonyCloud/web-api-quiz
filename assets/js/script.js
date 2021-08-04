@@ -98,9 +98,9 @@ document.getElementById('start').addEventListener('click', function (event) {
 
 // endgame function
 function endgame() {
-  console.log('endgame')
+  console.log("endgame");
   
-  localStorage.setItem('highScores', timeleft)
+  localStorage.setItem('${initials}', timeleft);
 
   window.location.href = "./hiScore.html";
 };

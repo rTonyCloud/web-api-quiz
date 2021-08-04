@@ -1,6 +1,10 @@
 var gameScoresArr = [];
 var quizGameScoreObj = {};
-var timeleft = 0
+
+
+
+//retreives local storage
+var allScores = localStorage.getItem("allScores")
 
 
 // Function to display score
