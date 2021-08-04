@@ -12,16 +12,16 @@ var displayScore = function () {
     //variable to hold the ID 'highScoreSubmit'
     var inputSubmit = document.getElementById('highScoreSubmit');
     //grab the finalScoreDisplay ID and set its content
-    document.getElementById('finalScoreDisplay').textContent = "Your Final Score is: " + score;
+    document.getElementById('finalScoreDisplay').textContent = "Your Final Score is: " + timeleft;
     // event handler to grab click, before displaying final score
     $('#submitScoreBtn').on('click', function (event) {
         // prevents the browser from refreshing after each click
         event.preventDefault();
-        var player = inputSubmit.value;
+        var initials = '${initials}'.value;
     
         quizGameScoreObj = {
-            name: player,
-            value: score,
+            name: initials,
+            value: timeleft,
         }
         // call the saveScore function
         saveScores();
@@ -33,7 +33,7 @@ var displayScore = function () {
 // Function to save score
 var saveScores = function () {
     //variable to hold score from local storage
-    var currentSavedScores = localStorage.getItem("highScores");
+    var currentSavedScores = localStorage.getItem("timleft");
     //if statement checks if currentSavedScores has a null value
     if (!currentSavedScores) {
         // Adds "quizGameScoreObj"
