@@ -1,7 +1,7 @@
-<<<<<<< HEAD
-# ajboricua.web-api-quiz.github.io
+# LIVE link below
+# rTonyCloud.web-api-quiz.github.io
 
-<<<<<<< HEAD
+
 # Quiz API
 
 ## Hello this is a fun short quiz built with javascript and DOM elements 
