@@ -1,6 +1,6 @@
-
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -11,21 +11,30 @@
 <header>
     <h2 id="timer">Timer: <span id="countdown">60</span></h2>
 </header>
+
 <body class="container">
     <main>
-    <div class id="landing">
-        <h1>Coding Quiz Challenge</h1>
-        <p>Try to answer the following code-related questions within the time limit. Keep in mind that incorrect answers will penalize your score/time by 10 seconds.</p>
-        <a href="" class="btn" id="start">start</a>
-        <a href="/hiScore.html" class="btn" id="highscore">High Scores</a>
-    </div>
+        <!-- front page starts here -->
+        <div id="landing" class="">
+            <h1>Coding Quiz Challenge</h1>
+            <p>Try to answer the following code-related questions within the time limit. Keep in mind that incorrect
+                answers will penalize your score/time by 10 seconds.</p>
+            <a href="" class="btn" id="start">start</a>
+            <a href="/hiScore.html" class="btn" id="highscore">High Scores</a>
+        </div>
+        <!-- front landing page ends here -->
 
-        <div class="questions hide">
+        <!-- questions starts here -->
+        <div id="questions" class="">
             <h2 id="title"></h2>
-        <div id="choices"></div>
-         </div>
+            <div id="choices"></div>
+        </div>
+        <!-- questions ends here -->
+
     </main>
     <script src="./assets/js/questions.js"></script>
+    <!-- <script src="./hiScore.html"></script> -->
     <script src="./assets/js/script.js"></script>
 </body>
+
 </html>

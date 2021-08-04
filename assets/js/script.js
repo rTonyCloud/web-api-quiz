@@ -10,11 +10,10 @@ var timerEl = document.getElementById('countdown')
 
 
 // Global Variable
-var timeleft = 5;
+var timeleft = 60;
 var timeRunning = false
-var score = 0;
+var highScore = 0;
 var questionsListIndex = 0;
-var penalty = 15;
 var interval = 0;
 
 
@@ -23,10 +22,10 @@ var interval = 0;
 
 // Timer that counts down from 60
 var timerCountdown = function () {
-  if (timeRunning == true){
+  if (timeRunning == true) {
     return false
   }
-    timeRunning = true
+  timeRunning = true
   //use the 'setInterval()' to call a function to be executed every 1000 milliseconds
   var timeInterval = setInterval(function () {
 
@@ -53,53 +52,55 @@ var timerCountdown = function () {
 
   }, 1000);
 };
-
+// starts the quiz game function
 var startQuiz = function () {
-  var currentQuestion = questionsList[questionsListIndex] 
+  // if the quiz doesn't find anymore question then it will end the game
+  var currentQuestion = questionsList[questionsListIndex]
   if (!currentQuestion) {
     return endgame();
   }
-
+  // this will reset the choices string after every chosen answer 
   questionTitle.innerText = questionsList[questionsListIndex].question
   choices.innerHTML = ''
-// Loop over every question object
-for (var i = 0; i < questionsList[questionsListIndex].choices.length; i++) {
-  // Display current question to user and ask OK/Cancel
-  var answer = (questionsList[questionsListIndex].answer);
-  var button = document.createElement("button")
+
+  // Loop over every question object within the question.js file
+  for (var i = 0; i < questionsList[questionsListIndex].choices.length; i++) {
+    // Display current question to user and ask OK/Cancel
+    var answer = (questionsList[questionsListIndex].answer);
+    var button = document.createElement("button")
     button.textContent = questionsList[questionsListIndex].choices[i]
     button.classname = "choiceBtn"
-    button.setAttribute("style","background:red;font-size:23px");
-    button.addEventListener('click', function (event){
+    button.setAttribute("style", "background:red;font-size:23px");
+    button.addEventListener('click', function (event) {
       event.target
       if (answer !== event.target.textContent) {
-        timeleft = timeleft -15
+        timeleft = timeleft - 15
       }
       questionsListIndex++
       startQuiz()
     })
     choices.appendChild(button)
-    
-    
-  if (
-    (answer === true && questionsList[i].answer) ||
-    (answer === false && questionsList[i].answer)
-  )  
-  {
 
-}
+{
 
-  }};
+    }
 
-  document.getElementById('start').addEventListener('click', function (event) {
-    event.preventDefault()
-    timerCountdown()
-    startQuiz()
-  })
-
-
-  function endgame() {
-      console.log('endgame')
-      localStorage.setItem('highScore', timeleft)
-      window.location.href = "./hiScore.html";
   }
+};
+// Start button //
+document.getElementById('start').addEventListener('click', function (event) {
+  event.preventDefault()
+  timerCountdown()
+  startQuiz()
+  // $(".landing").addClass("hide")
+  // $("Questions").removeClass("hide")
+})
+
+// endgame function
+function endgame() {
+  console.log('endgame')
+  
+  localStorage.setItem('highScores', timeleft)
+
+  window.location.href = "./hiScore.html";
+};

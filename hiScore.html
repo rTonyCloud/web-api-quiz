@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,12 +9,54 @@
     <link rel="stylesheet" href="./assets/css/hiscore.css">
     <title>High Score</title>
 </head>
-<body>
-    <header>
-        <h1>High Scores</h1>
-    </header>
-    <div>
 
+<body>
+
+        <!--HighScore Elements Begin-->
+        <div id="highScoreElGroup" class="hide">
+            <h5 id="backToStart" class="viewhightext"> &lt; Back to Start</h3>
+        </div>
+        <h1 class="highScoreTitle">High Scores</h1>
+        </div>
+        <hr>
+        <ul id="highScores" class="names">
+        </ul>
+        </div>
+        </div>
+        <!--HighScore Elements End-->
+    
+
+    
+
+     <!-- Times up elements begin -->
+     <div id="timer" class="">
+        <div>
+            <h3 class="timesUp">Time's Up!</h3>
+        </div>
+        <div>
+            <h4 id="finalScoreDisplay" class="bText">Your Final Score is:</h4>
+            <div class="">
+                <label for="highScores"></label>
+            </div>
+            <div>
+                <h4 class="bText">Enter Initals:</h4>
+            </div>
+            <label for="your initals"></label>
+            <input for="letters" placeholder="Initials" id="highScoreSubmit" name="initials"
+                class="form-input bText" size="20"/>
+        </div>
+
+        <div class="container">
+            <a href='' id="submitScoreBtn" class="btn">submit</a>
+        </div>
     </div>
+    </div>
+    <!--Times up elements end-->
+
+    <!-- restart game -->
+    <a href="./index.html" class="btn" id="start">Restart Game</a>
 </body>
+
+<script src="./assets/js/hiScore.js"></script>
+
 </html>

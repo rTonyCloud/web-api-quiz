@@ -58,3 +58,7 @@ span {
     color: hsl(0, 0%, 0%)
 }
 
+/*style to hide elements when not in use*/
+.hide {
+    display: none;
+}
