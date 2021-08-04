@@ -8,7 +8,7 @@ var questionsList = [
   
     {
         question: "Where is the correct place to insert a JavaScript?",
-        choices: ["html", "css", "js", "garbage"],
+        choices: ["html", "css", "js", "node.js"],
         answer: "html",
     },
   
