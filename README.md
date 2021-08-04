@@ -12,4 +12,4 @@
 * HTML/CS
 
 # picture of the quiz game
-![image](https://user-images.githubusercontent.com/85594926/128120357-e8e0aace-9830-4325-a19c-53e285591108.png)
+![image](https://user-images.githubusercontent.com/85594926/128120482-7b1f9491-ccbf-48f3-9171-b6e684609d1f.png)
