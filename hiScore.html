@@ -12,24 +12,23 @@
 
 <body>
 
-        <!--HighScore Elements Begin-->
-        <div id="highScoreElGroup" class="hide">
-            <h5 id="backToStart" class="viewhightext"> &lt; Back to Start</h3>
-        </div>
-        <h1 class="highScoreTitle">High Scores</h1>
-        </div>
-        <hr>
-        <ul id="highScores" class="names">
-        </ul>
-        </div>
-        </div>
-        <!--HighScore Elements End-->
-    
+    <!--HighScore Elements Begin-->
+    <div id="highScoreElGroup" class="hide">
+        <h5 id="backToStart" class="viewhightext"> &lt; Back to Start</h3>
+    </div>
+    <h1 class="highScoreTitle">High Scores</h1>
+    </div>
+    <hr>
+    <ul id="highScores" class="names"></ul>
+    </div>
+    </div>
+    <!--HighScore Elements End-->
 
-    
 
-     <!-- Times up elements begin -->
-     <div id="timer" class="">
+
+
+    <!-- Times up elements begin -->
+    <section id="timer" class="">
         <div>
             <h3 class="timesUp">Time's Up!</h3>
         </div>
@@ -42,19 +41,20 @@
                 <h4 class="text">Enter Initals:</h4>
             </div>
             <label for="your initals"></label>
-            <input for="letters" placeholder="Initials" id="highScoreSubmit" name="initials"
-                class="form-input text" size="20"/>
+            <input for="letters" placeholder="Initials" id="highScoreSubmit" name="initials" class="form-input text"
+                size="20" />
         </div>
 
         <div class="container">
-            <a href='' id="submitScoreBtn" class="btn">submit</a>
+            <button id="submitScoreBtn" class="btn btn2">submit</a>
         </div>
-    </div>
-    </div>
+        </div>
+    </section>
     <!--Times up elements end-->
 
     <!-- restart game -->
-    <a href="./index.html" class="btn" id="start">Restart Game</a>
+    <a href="./index.html"> <button class="btn" id="start">Restart Game</button>
+    </a>
 </body>
 
 <script src="./assets/js/hiScore.js"></script>

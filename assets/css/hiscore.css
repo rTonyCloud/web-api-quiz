@@ -19,29 +19,26 @@ p, h3 {
 }
 
 #highScoreSubmit {
-    height:40px;
+    height:2rem;
     border-color: red;
     
 }
 
 /* button style starts here */
 .btn {
-    display:flex;
-    justify-content:space-evenly;
-    justify-items: center;
+    margin-left: 1rem;
     text-transform: uppercase;
     padding: 1rem;
-    font-size: 50px;
-    background-color: red;
-    border-radius: 25px ;
-    margin-top: 30px;
+    font-size: 3rem;
+    background-color: rgb(255, 255, 255);
+    border-radius: 2rem ;
+    margin-top: 3rem;
 }
-
 
 .btn:hover {
     cursor: pointer;
     border: 2px inset;
-    color: hsl(0, 0%, 0%)
+    color: hsl(226, 100%, 50%)
 }
 /* button style ends here */
 
