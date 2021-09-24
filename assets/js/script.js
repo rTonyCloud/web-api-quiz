@@ -1,4 +1,6 @@
 var bobdy = document.body;
+
+
 // dom variables
 var getCount = document.getElementById('countdown');
 var getTimer = document.getElementById('timer')
@@ -6,6 +8,7 @@ var starter = document.getElementById('start')
 var questionTitle = document.getElementById('title')
 var questionChoice = document.getElementById('choices')
 var timerEl = document.getElementById('countdown')
+var hidden = document.getElementById('landing');
 
 
 
@@ -81,7 +84,7 @@ var startQuiz = function () {
     })
     choices.appendChild(button)
 
-{
+    {
 
     }
 
@@ -89,17 +92,18 @@ var startQuiz = function () {
 };
 // Start button //
 document.getElementById('start').addEventListener('click', function (event) {
+  console.log(start)
   event.preventDefault()
   timerCountdown()
   startQuiz()
   // $(".landing").addClass("hide")
   // $("Questions").removeClass("hide")
-})
+});
 
 // endgame function
 function endgame() {
   console.log("endgame");
-  
+
   localStorage.setItem('${initials}', timeleft);
 
   window.location.href = "./hiScore.html";
