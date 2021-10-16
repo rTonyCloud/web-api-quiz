@@ -96,7 +96,9 @@ document.getElementById('start').addEventListener('click', function (event) {
   event.preventDefault()
   timerCountdown()
   startQuiz()
-  // $(".landing").addClass("hide")
+  document.getElementById("landing").style.display = 'none';
+  document.getElementById("Questions").style.display = 'block';
+  // $("#landing").addClass("hide")
   // $("Questions").removeClass("hide")
 });
 

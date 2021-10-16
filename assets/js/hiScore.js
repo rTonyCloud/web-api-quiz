@@ -82,6 +82,9 @@ var displayHighScore = function () {
 
     for (var i = 0; i < savedScores.length; i++) {
         createScoreEl(savedScores[i]);
+
+
+        
         //sort list of high scores from highest to lowest
         var sortList = function () {
             var list, i, switching, b, shouldSwitch;

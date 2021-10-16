@@ -36,7 +36,16 @@ span {
     color:red;
 }
 
-
+.btn2 {
+    text-transform: uppercase;
+    margin-right: 80rem;
+    margin-top: 3rem;
+    padding: 1rem;
+    background-color: rgb(255, 255, 255);
+    color: red;
+    font-weight: 900;
+    cursor: pointer;   
+}
 
 a {
     text-decoration: none;
@@ -45,7 +54,13 @@ a {
 .btn:hover {
     cursor: pointer;
     border: 2px inset;
-    color: hsl(226, 100%, 50%)
+    background-color: hsl(226, 100%, 50%)
+}
+
+.btn2:hover {
+    cursor: pointer;
+    border: 2px inset;
+    background-color: hsl(226, 100%, 50%)
 }
 
 /*style to hide elements when not in use*/
